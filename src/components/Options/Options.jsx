@@ -1,29 +1,14 @@
-const Options = ({ updateFeedback }) => {
+import styles from './Options.module.css';
+import Button from '../Button/Button';
+
+const Options = ({ updateFeedback, isVisible }) => {
 	return (
-		<>
-			<button
-				onClick={() => {
-					updateFeedback('good');
-				}}
-			>
-				Good
-			</button>
-			<button
-				onClick={() => {
-					updateFeedback('neutral');
-				}}
-			>
-				Neutral
-			</button>
-			<button
-				onClick={() => {
-					updateFeedback('bad');
-				}}
-			>
-				Bad
-			</button>
-			<button>Reset</button>
-		</>
+		<div className={styles.wrapper}>
+			<Button handleClick={updateFeedback}>Good</Button>
+			<Button handleClick={updateFeedback}>Neutral</Button>
+			<Button handleClick={updateFeedback}>Bad</Button>
+			{isVisible && <Button handleClick={updateFeedback}>Reset</Button>}
+		</div>
 	);
 };
 export default Options;

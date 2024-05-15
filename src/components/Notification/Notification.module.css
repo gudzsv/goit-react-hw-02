@@ -1,0 +1,10 @@
+.notification {
+	display: block;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	width: 400px;
+	border: 2px solid transparent;
+	border-radius: 12px;
+	font-weight: bold;
+}

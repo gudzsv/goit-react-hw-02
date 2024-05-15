@@ -1,0 +1,5 @@
+.wrapper {
+	display: inline-flex;
+	gap: 16px;
+	margin-bottom: 20px;
+}
